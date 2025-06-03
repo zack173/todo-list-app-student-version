@@ -5,7 +5,7 @@ const getTasks = async () => {
   const res = await db.query(
     //correct this SQL query to select all tasks from the database
     "SELECT * FROM tasks ORDER BY created_at DESC"
-    // * is the wildcard. Makes sure everything goes through the server.
+    // * Is the wildcard. Makes sure everything goes through the server.
   );
   return res.rows;
 };
@@ -17,6 +17,7 @@ const addTask = async (title, description) => {
     [title, description]
   );
   return res.rows[0];
+  // IT's adds a new task with a description to the database making it as incomplete and recording the current time. Rutrun the created task 
 };
 
 module.exports = { getTasks, addTask };
