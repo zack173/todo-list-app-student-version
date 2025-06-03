@@ -9,18 +9,18 @@ body {
   max-width: 500px;
   margin: auto;
   background: red;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 40px;
+  border-radius: 16px;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
+  list-style: georgian inside url("/shared-assets/images/examples/rocket.svg");
+  padding: 10;
 }
 
 li {
   padding: 10px;
   margin-top: 10px;
-  background: #eee;
+  background: #ee;
   border-radius: 4px;
 }
